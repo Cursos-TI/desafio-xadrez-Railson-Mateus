@@ -8,6 +8,8 @@
 #define BISPO_PASSOS 5
 #define TORRE_PASSOS 5
 #define RAINHA_PASSOS 8
+#define CAVALO_PASSOS_VERTICAL 2
+#define CAVALO_PASSOS_HORIZONTAL 1
 
 int main() {
     // Nível Novato - Movimentação das Peças
@@ -46,6 +48,18 @@ int main() {
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
+    printf("Movimentação do Cavalo em L\n");
+    // Movimento vertical
+    for (int i = 0; i < CAVALO_PASSOS_VERTICAL; i++) {
+        printf("Baixo\n");
+    }
+
+    // Movimento horizontal
+    int j = 0;
+    while (j < CAVALO_PASSOS_HORIZONTAL) {
+        printf("Esquerda\n");
+        j++;
+    }
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
